@@ -1,0 +1,1505 @@
+<!DOCTYPE html><html lang="id" class="scroll-smooth"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pangandaran Paddle Board | Pengalaman Laut Premium</title>
+    
+    <!-- Meta SEO Tags -->
+    <meta name="description" content="Temukan keindahan Pangandaran dari atas air. Pengalaman stand up paddle premium, perjalanan matahari terbit, dan eksplorasi tropis di Jawa Barat, Indonesia.">
+    <meta name="keywords" content="Pangandaran Paddle Board, SUP Pangandaran, sewa paddle board, Dayung Matahari Terbit, Green Canyon SUP, Pantai Timur Pangandaran, Pantai Barat Pangandaran">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&amp;family=Source+Sans+Pro:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primaryAccent: '#16D5CC',
+                        secondaryAccent: '#FFB434',
+                        textMain: '#858585',
+                        brandWhite: '#FFFFFF',
+                        brandDark: '#000000',
+                        neutralLight: '#FAFAFA',
+                    },
+                    fontFamily: {
+                        heading: ['"Josefin Sans"', 'sans-serif'],
+                        body: ['"Source Sans Pro"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'premium-low': 'rgba(0, 0, 0, 0.03) 0px 0px 10px 2px',
+                        'premium-mid': 'rgba(0, 0, 0, 0.05) 0px 5px 15px 0px',
+                        'premium-high': 'rgba(22, 213, 204, 0.1) 0px 10px 30px 0px',
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer base {
+            h1, h2, h3, h4, .font-heading {
+                font-family: 'Josefin Sans', sans-serif;
+                font-weight: 600;
+                letter-spacing: 0.05em;
+            }
+            body, .font-body {
+                font-family: 'Source Sans Pro', sans-serif;
+                color: #858585;
+            }
+        }
+        @layer utilities {
+            ::-webkit-scrollbar { width: 8px; }
+            ::-webkit-scrollbar-track { background: #FFFFFF; }
+            ::-webkit-scrollbar-thumb { background: #16D5CC; border-radius: 99px; }
+            ::-webkit-scrollbar-thumb:hover { background: #FFB434; }
+        }
+        #interactive-cursor {
+            pointer-events: none;
+            transition: transform 0.1s ease, background-color 0.3s ease;
+            z-index: 9999;
+        }
+        .reveal-container { overflow: hidden; border-radius: 1.5rem; }
+        .reveal-image { transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), filter 0.8s ease; }
+        .reveal-container:hover .reveal-image { transform: scale(1.06); filter: brightness(0.95); }
+    </style>
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Pangandaran Paddle Board - Healing Vibes &amp; Aesthetic">
+    <meta property="og:description" content="Spill hidden gem Pangandaran dari atas paddle board. Vibes lautnya bikin lo lupa sama deadline! Booking sekarang keburu penuh.">
+    <meta property="og:image" content="./activity_sunrise_paddle_1780802614704.webp">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="./activity_sunrise_paddle_1780802614704.webp">
+    
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-brandWhite text-textMain selection:bg-primaryAccent selection:text-brandWhite overflow-x-hidden">
+
+    <div id="interactive-cursor" class="fixed top-0 left-0 w-8 h-8 border border-primaryAccent rounded-full hidden md:flex items-center justify-center -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+        <div class="w-1.5 h-1.5 bg-primaryAccent rounded-full"></div>
+    </div>
+
+    <nav class="fixed top-0 left-0 w-full z-50 transition-all duration-300 py-6" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
+            <!-- Logo Brand -->
+            <a href="#hero" class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 rounded-full bg-primaryAccent flex items-center justify-center text-brandWhite shadow-lg shadow-primaryAccent/30 group-hover:bg-secondaryAccent group-hover:shadow-secondaryAccent/30 transition-all duration-300">
+                    <i data-lucide="waves" class="w-5 h-5"></i>
+                </div>
+                <div>
+                    <span class="text-brandDark font-heading text-lg tracking-widest block uppercase font-bold">Pangandaran</span>
+                    <span class="text-primaryAccent font-heading text-xs tracking-widest block -mt-1 font-semibold uppercase">Paddle Board</span>
+                </div>
+            </a>
+
+            <!-- Menu Navigasi -->
+            <div class="hidden lg:flex items-center space-x-10 text-xs tracking-widest uppercase font-semibold text-brandDark/70">
+                <a href="#about" class="hover:text-primaryAccent transition-colors">Pengalaman</a>
+                <a href="#activities" class="hover:text-primaryAccent transition-colors">Aktivitas</a>
+                <a href="#destinations" class="hover:text-primaryAccent transition-colors">Destinasi</a>
+                <a href="#packages" class="hover:text-primaryAccent transition-colors">Paket Hemat</a>
+                <a href="#gallery" class="hover:text-primaryAccent transition-colors">Galeri</a>
+                <a href="#faq" class="hover:text-primaryAccent transition-colors">FAQ</a>
+            </div>
+
+            <!-- Tombol CTA Navigasi -->
+            <div class="flex items-center space-x-4">
+                <a href="#booking" class="hidden sm:inline-flex items-center space-x-2 bg-brandDark text-brandWhite hover:bg-primaryAccent hover:text-brandWhite px-8 py-3.5 rounded-full text-xs uppercase tracking-widest font-bold transition-all duration-300 shadow-premium-mid hover:shadow-premium-high">
+                    <span>Pesan Sekarang</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+                
+                <!-- Toggle Menu Mobile -->
+                <button id="mobile-menu-toggle" class="lg:hidden p-2 text-brandDark hover:text-primaryAccent focus:outline-none">
+                    <i data-lucide="menu" class="w-6 h-6" id="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menu Hampar Mobile -->
+        <div id="mobile-overlay" class="hidden fixed inset-x-0 top-[88px] bg-brandWhite/95 backdrop-blur-md shadow-premium-mid flex-col py-8 px-6 space-y-6 text-sm uppercase tracking-widest font-semibold border-t border-gray-100 z-40">
+            <a href="#about" class="mobile-link text-brandDark hover:text-primaryAccent">Pengalaman</a>
+            <a href="#activities" class="mobile-link text-brandDark hover:text-primaryAccent">Aktivitas</a>
+            <a href="#destinations" class="mobile-link text-brandDark hover:text-primaryAccent">Destinasi</a>
+            <a href="#packages" class="mobile-link text-brandDark hover:text-primaryAccent">Paket Hemat</a>
+            <a href="#gallery" class="mobile-link text-brandDark hover:text-primaryAccent">Galeri</a>
+            <a href="#faq" class="mobile-link text-brandDark hover:text-primaryAccent">FAQ</a>
+            <a href="#booking" class="mobile-link inline-flex items-center space-x-2 text-primaryAccent hover:text-brandDark">
+                <span>Hubungi Kami via WhatsApp</span>
+                <i data-lucide="phone" class="w-4 h-4"></i>
+            </a>
+        </div>
+    </nav>
+
+    <section id="hero" class="relative min-h-screen flex items-center justify-center pt-24 overflow-hidden bg-brandWhite" data-aos="fade-up">
+        <!-- Elemen Latar Belakang Ombak Lembut -->
+        <div class="absolute inset-0 z-0 opacity-10">
+            <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 800" preserveAspectRatio="none">
+                <path fill="#16D5CC" fill-opacity="1" d="M0,224L60,208C120,192,240,160,360,165.3C480,171,600,213,720,208C840,203,960,149,1080,149.3C1200,149,1320,203,1380,229.3L1440,256L1440,800L1380,800C1320,800,1200,800,1080,800C960,800,840,800,720,800C600,800,480,800,360,800C240,800,120,800,60,800L0,800Z"></path>
+            </svg>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10 py-16">
+            <!-- Konten Teks Sebelah Kiri -->
+            <div class="lg:col-span-6 space-y-8 text-left">
+                <!-- Tag Mikro Premium -->
+                <div class="inline-flex items-center space-x-2 bg-primaryAccent/10 px-4 py-2 rounded-full">
+                    <span class="w-2 h-2 bg-primaryAccent rounded-full animate-pulse"></span>
+                    <span class="text-xs font-semibold uppercase tracking-widest text-primaryAccent font-heading">Destinasi Petualangan Laut No.1 Pangandaran</span>
+                </div>
+
+                <!-- Judul Utama -->
+                <h1 class="text-5xl md:text-7xl font-bold tracking-tight text-brandDark leading-none uppercase">
+                    Pangandaran<br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-primaryAccent to-secondaryAccent">Paddle Board</span>
+                </h1>
+
+                <!-- Subjudul -->
+                <p class="text-lg md:text-xl text-textMain max-w-lg font-light leading-relaxed">
+                    Rasakan keindahan alam Pangandaran dari perspektif yang sepenuhnya berbeda. Nikmati kebebasan di atas air bersama pemandu lokal profesional.
+                </p>
+
+                <!-- Tombol Navigasi Cepat -->
+                <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+                    <a href="#booking" class="bg-primaryAccent hover:bg-brandDark text-brandWhite font-bold text-xs uppercase tracking-widest px-8 py-5 rounded-full text-center transition-all duration-300 shadow-premium-mid hover:shadow-premium-high">
+                        Pesan Pengalaman
+                    </a>
+                    <a href="#activities" class="border border-brandDark/25 hover:border-primaryAccent text-brandDark hover:text-primaryAccent font-bold text-xs uppercase tracking-widest px-8 py-5 rounded-full text-center transition-all duration-300">
+                        Lihat Aktivitas
+                    </a>
+                </div>
+
+                <!-- Keunggulan Layanan -->
+                <div class="grid grid-cols-3 gap-6 pt-6 border-t border-gray-100 max-w-md">
+                    <div class="space-y-1">
+                        <span class="text-brandDark font-heading text-lg font-bold block">4.9 ★</span>
+                        <span class="text-xs uppercase tracking-wider text-textMain/75 block">Rating Wisatawan</span>
+                    </div>
+                    <div class="space-y-1">
+                        <span class="text-brandDark font-heading text-lg font-bold block">100%</span>
+                        <span class="text-xs uppercase tracking-wider text-textMain/75 block">Kru Lokal</span>
+                    </div>
+                    <div class="space-y-1">
+                        <span class="text-brandDark font-heading text-lg font-bold block">Sertifikat</span>
+                        <span class="text-xs uppercase tracking-wider text-textMain/75 block">Alat Standar</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Media Visual Sebelah Kanan -->
+            <div class="lg:col-span-6 relative flex justify-center items-center">
+                <!-- Efek Glow Belakang Gambar -->
+                <div class="absolute w-72 h-72 bg-primaryAccent/20 rounded-full blur-3xl top-0 left-0 pointer-events-none"></div>
+                <div class="absolute w-72 h-72 bg-secondaryAccent/20 rounded-full blur-3xl bottom-0 right-0 pointer-events-none"></div>
+
+                <!-- Frame Gambar Utama -->
+                <div class="reveal-container w-full h-[450px] md:h-[550px] shadow-premium-mid border border-gray-100 relative" data-aos="zoom-in">
+                    <img src="./activity_sunrise_paddle_1780802614704.webp" alt="Petualangan Pagi Hari Stand Up Paddle Boarding di Pangandaran" class="reveal-image w-full h-full object-cover">
+                    
+                    <!-- Floater Informasi Estetis -->
+                    <div class="absolute bottom-6 left-6 right-6 bg-brandWhite/90 backdrop-blur-md rounded-2xl p-6 shadow-premium-mid border border-white/40 flex items-center justify-between">
+                        <div class="space-y-1">
+                            <span class="text-brandDark font-heading font-bold text-sm block uppercase tracking-wider">Keindahan Pagi Hari</span>
+                            <span class="text-xs text-textMain block">Tersedia setiap hari mulai pukul 05:00 WIB</span>
+                        </div>
+                        <a href="#booking" class="w-10 h-10 bg-primaryAccent text-brandWhite rounded-full flex items-center justify-center hover:bg-secondaryAccent transition-colors duration-300">
+                            <i data-lucide="chevron-right" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 px-6 md:px-12 bg-neutralLight relative" data-aos="fade-up">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+            
+            <!-- Grid Gambar Sebelah Kiri -->
+            <div class="lg:col-span-6 order-last lg:order-first relative">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
+                    <!-- Gambar Utama -->
+                    <div class="md:col-span-8 reveal-container h-64 md:h-[400px] shadow-premium-mid border border-white" data-aos="zoom-in">
+                        <img loading="lazy" src="./pangandaran_paddle_board2.webp" alt="Pemandu Paddle Board Lokal" class="reveal-image w-full h-full object-cover">
+                    </div>
+                    <!-- Gambar Sekunder & Informasi Instan -->
+                    <div class="md:col-span-4 flex flex-col md:justify-end gap-4 md:gap-0 md:space-y-4">
+                        <div class="reveal-container h-48 md:h-[200px] shadow-premium-mid border border-white" data-aos="zoom-in">
+                            <img loading="lazy" src="./pangandaran_paddle_board3.webp" alt="Mendayung Bersama di Pantai" class="reveal-image w-full h-full object-cover">
+                        </div>
+                        <div class="bg-primaryAccent text-brandWhite p-6 rounded-[1.5rem] shadow-premium-mid text-center space-y-2 flex-1 md:flex-none flex flex-col justify-center">
+                            <span class="text-3xl font-heading font-bold block">Aman</span>
+                            <span class="text-[10px] font-heading font-semibold uppercase tracking-widest block">Terlindungi &amp; Berasuransi</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Konten Narasi Sebelah Kanan -->
+            <div class="lg:col-span-6 space-y-8 text-left">
+                <span class="text-primaryAccent font-heading text-sm font-bold uppercase tracking-widest block">Semangat Eksplorasi Lokal</span>
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-brandDark uppercase leading-tight" data-aos="fade-down">
+                    Lebih dari Sekadar Mendayung.
+                </h2>
+                <div class="w-20 h-1 bg-secondaryAccent rounded-full"></div>
+                <p class="text-lg text-brandDark font-medium leading-relaxed">
+                    Pangandaran Paddle Board mengundang Anda untuk menjelajahi perairan tenang, garis pantai yang memukau, serta sudut-sudut tersembunyi Pangandaran melalui petualangan mendayung yang aman, ramah pemula, dan sangat berkesan.
+                </p>
+                <p class="text-textMain font-light leading-relaxed">
+                    Apakah Anda ingin menikmati ketenangan kabut pagi di Pantai Timur saat matahari terbit, membawa keluarga kecil bersenang-senang di air, berinteraksi langsung memberi makan ikan karang, atau menjelajahi ngarai hijau tropis yang megah — papan dayung premium kami siap menjadi sarana terbaik Anda menemukan kebebasan mutlak di atas samudera.
+                </p>
+                
+                <!-- Kelebihan Detil -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6 border-t border-gray-200">
+                    <div class="flex items-start space-x-3">
+                        <div class="w-8 h-8 rounded-full bg-primaryAccent/10 text-primaryAccent flex items-center justify-center shrink-0">
+                            <i data-lucide="shield-check" class="w-4 h-4"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-heading font-bold text-sm text-brandDark uppercase tracking-wider">Perlengkapan Premium</h4>
+                            <p class="text-xs text-textMain mt-1">Papan Red Paddle Co. berkualitas tinggi &amp; jaket keselamatan bersertifikat.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <div class="w-8 h-8 rounded-full bg-secondaryAccent/10 text-secondaryAccent flex items-center justify-center shrink-0">
+                            <i data-lucide="users" class="w-4 h-4"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-heading font-bold text-sm text-brandDark uppercase tracking-wider">Pemandu Asli Daerah</h4>
+                            <p class="text-xs text-textMain mt-1">Pecinta laut lokal yang memahami pergerakan pasang-surut dan titik rahasia pantai.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="activities" class="py-24 px-6 md:px-12 bg-brandWhite" data-aos="fade-up">
+        <div class="max-w-7xl mx-auto text-center space-y-16">
+            <div class="space-y-4 max-w-2xl mx-auto">
+                <span class="text-primaryAccent font-heading text-sm font-bold uppercase tracking-widest block">Tentukan Petualanganmu</span>
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-brandDark uppercase" data-aos="fade-down">Pilihan Aktivitas Kami</h2>
+                <div class="w-20 h-1 bg-primaryAccent mx-auto rounded-full"></div>
+                <p class="text-textMain text-sm md:text-base font-light">
+                    Setiap detak petualangan laut memiliki keunikan tersendiri. Pilih jenis aktivitas yang sesuai dengan ritme liburan impian Anda.
+                </p>
+            </div>
+
+            <!-- Grid Aktivitas -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Aktivitas 1 -->
+                <div class="bg-brandWhite rounded-[2rem] p-4 shadow-premium-low border border-gray-100 hover:shadow-premium-mid transition-all duration-300 group flex flex-col justify-between" data-aos="fade-up">
+                    <div class="reveal-container h-64 mb-6" data-aos="zoom-in">
+                        <img loading="lazy" src="./activity_family_paddle_1780802642083.webp" alt="Stand Up Paddle boarding di Indonesia" class="reveal-image w-full h-full object-cover">
+                    </div>
+                    <div class="px-4 pb-4 space-y-3 flex-1 flex flex-col justify-between text-left">
+                        <div>
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-heading font-bold text-lg text-brandDark uppercase tracking-wider group-hover:text-primaryAccent transition-colors">Stand Up Paddle</h3>
+                                <span class="bg-primaryAccent/10 text-primaryAccent text-xs font-bold px-3 py-1 rounded-full">Terpopuler</span>
+                            </div>
+                            <p class="text-sm text-textMain font-light mt-2">
+                                Rasakan asyiknya meluncur santai di permukaan laut yang tenang. Sempurna bagi Anda yang baru pertama kali mencoba maupun yang sudah mahir.
+                            </p>
+                        </div>
+                        <div class="pt-6 border-t border-gray-100 flex items-center justify-between text-xs font-bold uppercase tracking-widest text-brandDark">
+                            <span>Waktu Healing: 2 Jam</span>
+                            <a href="#booking" onclick="preselectActivity('Stand Up Paddle')" class="text-primaryAccent group-hover:text-brandDark flex items-center space-x-1.5 transition-colors">
+                                <span>Sewa Papan</span>
+                                <i data-lucide="arrow-right" class="w-4.5 h-4.5"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aktivitas 2 -->
+                <div class="bg-brandWhite rounded-[2rem] p-4 shadow-premium-low border border-gray-100 hover:shadow-premium-mid transition-all duration-300 group flex flex-col justify-between" data-aos="fade-up">
+                    <div class="reveal-container h-64 mb-6" data-aos="zoom-in">
+                        <img loading="lazy" src="./activity_sunrise_paddle_1780802614704.webp" alt="Stand Up Paddle Menjelang Pagi" class="reveal-image w-full h-full object-cover">
+                    </div>
+                    <div class="px-4 pb-4 space-y-3 flex-1 flex flex-col justify-between text-left">
+                        <div>
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-heading font-bold text-lg text-brandDark uppercase tracking-wider group-hover:text-secondaryAccent transition-colors">Sunrise Paddle</h3>
+                                <span class="bg-secondaryAccent/10 text-secondaryAccent text-xs font-bold px-3 py-1 rounded-full">Indah</span>
+                            </div>
+                            <p class="text-sm text-textMain font-light mt-2">
+                                Dimulai lebih pagi pukul 05:00 WIB. Nikmati momen magis saat matahari terbit perlahan menyinari langit Pantai Timur yang jingga keemasan.
+                            </p>
+                        </div>
+                        <div class="pt-6 border-t border-gray-100 flex items-center justify-between text-xs font-bold uppercase tracking-widest text-brandDark">
+                            <span>Waktu Healing: 3 Jam</span>
+                            <a href="#booking" onclick="preselectActivity('Sunrise Paddle')" class="text-secondaryAccent group-hover:text-brandDark flex items-center space-x-1.5 transition-colors">
+                                <span>Pesan Sekarang</span>
+                                <i data-lucide="arrow-right" class="w-4.5 h-4.5"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aktivitas 3 -->
+                <div class="bg-brandWhite rounded-[2rem] p-4 shadow-premium-low border border-gray-100 hover:shadow-premium-mid transition-all duration-300 group flex flex-col justify-between" data-aos="fade-up">
+                    <div class="reveal-container h-64 mb-6" data-aos="zoom-in">
+                        <img loading="lazy" src="./activity_green_canyon_1780802628294.webp" alt="Mendayung Bersama Keluarga" class="reveal-image w-full h-full object-cover">
+                    </div>
+                    <div class="px-4 pb-4 space-y-3 flex-1 flex flex-col justify-between text-left">
+                        <div>
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-heading font-bold text-lg text-brandDark uppercase tracking-wider group-hover:text-primaryAccent transition-colors">Family Paddle</h3>
+                                <span class="bg-primaryAccent/10 text-primaryAccent text-xs font-bold px-3 py-1 rounded-full">Segala Usia</span>
+                            </div>
+                            <p class="text-sm text-textMain font-light mt-2">
+                                Paket mendayung tandem dengan tingkat kestabilan tinggi yang dirancang khusus untuk membawa orang tua dan anak menikmati keindahan laut bersama.
+                            </p>
+                        </div>
+                        <div class="pt-6 border-t border-gray-100 flex items-center justify-between text-xs font-bold uppercase tracking-widest text-brandDark">
+                            <span>Waktu Healing: 2.5 Jam</span>
+                            <a href="#booking" onclick="preselectActivity('Family Paddle')" class="text-primaryAccent group-hover:text-brandDark flex items-center space-x-1.5 transition-colors">
+                                <span>Pesan Sekarang</span>
+                                <i data-lucide="arrow-right" class="w-4.5 h-4.5"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aktivitas 4 -->
+                <div class="bg-brandWhite rounded-[2rem] p-4 shadow-premium-low border border-gray-100 hover:shadow-premium-mid transition-all duration-300 group flex flex-col justify-between" data-aos="fade-up">
+                    <div class="reveal-container h-64 mb-6" data-aos="zoom-in">
+                        <img loading="lazy" src="./activity_sunrise_paddle_1780802614704.webp" alt="Memberi makan ikan laut di atas paddleboard" class="reveal-image w-full h-full object-cover">
+                    </div>
+                    <div class="px-4 pb-4 space-y-3 flex-1 flex flex-col justify-between text-left">
+                        <div>
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-heading font-bold text-lg text-brandDark uppercase tracking-wider group-hover:text-secondaryAccent transition-colors">Memberi Makan Ikan</h3>
+                                <span class="bg-secondaryAccent/10 text-secondaryAccent text-xs font-bold px-3 py-1 rounded-full">Konservasi</span>
+                            </div>
+                            <p class="text-sm text-textMain font-light mt-2">
+                                Mendayunglah ke titik laut dangkal yang jernih dan beri makan kawanan ikan laut yang cantik dengan pakan organik yang ramah lingkungan.
+                            </p>
+                        </div>
+                        <div class="pt-6 border-t border-gray-100 flex items-center justify-between text-xs font-bold uppercase tracking-widest text-brandDark">
+                            <span>Waktu Healing: 1.5 Jam</span>
+                            <a href="#booking" onclick="preselectActivity('Feeding Fish')" class="text-secondaryAccent group-hover:text-brandDark flex items-center space-x-1.5 transition-colors">
+                                <span>Kepoin Paketnya</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aktivitas 5 -->
+                <div class="bg-brandWhite rounded-[2rem] p-4 shadow-premium-low border border-gray-100 hover:shadow-premium-mid transition-all duration-300 group flex flex-col justify-between" data-aos="fade-up">
+                    <div class="reveal-container h-64 mb-6" data-aos="zoom-in">
+                        <img loading="lazy" src="./activity_rock_formation_1780802654815.webp" alt="Snorkeling di laut jernih" class="reveal-image w-full h-full object-cover">
+                    </div>
+                    <div class="px-4 pb-4 space-y-3 flex-1 flex flex-col justify-between text-left">
+                        <div>
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-heading font-bold text-lg text-brandDark uppercase tracking-wider group-hover:text-primaryAccent transition-colors">Snorkeling</h3>
+                                <span class="bg-primaryAccent/10 text-primaryAccent text-xs font-bold px-3 py-1 rounded-full">Eksplorasi Karang</span>
+                            </div>
+                            <p class="text-sm text-textMain font-light mt-2">
+                                Berlabuh di titik terumbu karang indah sekitar Pasir Putih, gunakan pelindung muka, lalu nikmati surga bawah laut Pangandaran yang menakjubkan.
+                            </p>
+                        </div>
+                        <div class="pt-6 border-t border-gray-100 flex items-center justify-between text-xs font-bold uppercase tracking-widest text-brandDark">
+                            <span>Waktu Healing: 3 Jam</span>
+                            <a href="#booking" onclick="preselectActivity('Snorkeling')" class="text-primaryAccent group-hover:text-brandDark flex items-center space-x-1.5 transition-colors">
+                                <span>Pesan Sekarang</span>
+                                <i data-lucide="arrow-right" class="w-4.5 h-4.5"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aktivitas 6 -->
+                <div class="bg-brandWhite rounded-[2rem] p-4 shadow-premium-low border border-gray-100 hover:shadow-premium-mid transition-all duration-300 group flex flex-col justify-between" data-aos="fade-up">
+                    <div class="reveal-container h-64 mb-6" data-aos="zoom-in">
+                        <img loading="lazy" src="./activity_camping_1780802781876.webp" alt="Berkemah di tepi pantai tersembunyi" class="reveal-image w-full h-full object-cover">
+                    </div>
+                    <div class="px-4 pb-4 space-y-3 flex-1 flex flex-col justify-between text-left">
+                        <div>
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-heading font-bold text-lg text-brandDark uppercase tracking-wider group-hover:text-secondaryAccent transition-colors">Camping Adventure</h3>
+                                <span class="bg-secondaryAccent/10 text-secondaryAccent text-xs font-bold px-3 py-1 rounded-full">Perjalanan Epik</span>
+                            </div>
+                            <p class="text-sm text-textMain font-light mt-2">
+                                Rasakan pengalaman bermalam yang syahdu di pantai pasir putih tersembunyi, lengkap dengan tenda premium, api unggun hangat, dan ikan bakar segar.
+                            </p>
+                        </div>
+                        <div class="pt-6 border-t border-gray-100 flex items-center justify-between text-xs font-bold uppercase tracking-widest text-brandDark">
+                            <span>Waktu Healing: Bermalam</span>
+                            <a href="#booking" onclick="preselectActivity('Camping Adventure')" class="text-secondaryAccent group-hover:text-brandDark flex items-center space-x-1.5 transition-colors">
+                                <span>Mulai Petualangan</span>
+                                <i data-lucide="arrow-right" class="w-4.5 h-4.5"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="destinations" class="py-24 px-6 md:px-12 bg-neutralLight overflow-hidden" data-aos="fade-up">
+        <div class="max-w-7xl mx-auto space-y-16">
+            <div class="flex flex-col md:flex-row items-start md:items-end justify-between gap-6">
+                <div class="space-y-4">
+                    <span class="text-primaryAccent font-heading text-sm font-bold uppercase tracking-widest block">Garis Pantai Eksotik</span>
+                    <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-brandDark uppercase" data-aos="fade-down">Destinasi Kami</h2>
+                    <div class="w-20 h-1 bg-secondaryAccent rounded-full"></div>
+                </div>
+                <p class="text-textMain max-w-md font-light text-sm leading-relaxed">
+                    Menjauh dari keramaian yang berisik. Kami memilih lima lokasi perairan tenang yang indah untuk memberikan Anda privasi dan kenyamanan mendayung yang optimal.
+                </p>
+            </div>
+
+            <!-- Grid Seleksi Destinasi Interaktif -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+                
+                <!-- Destinasi 1 -->
+                <div onclick="showDestinationDetail('timur')" class="group cursor-pointer bg-brandWhite rounded-[2rem] overflow-hidden p-3 shadow-premium-low hover:shadow-premium-mid transition-all duration-300 relative h-96 flex flex-col justify-end" data-aos="fade-up">
+                    <img loading="lazy" src="./activity_sunrise_paddle_1780802614704.webp" alt="Pantai Timur Pangandaran" class="absolute inset-0 w-full h-full object-cover filter brightness-[0.75] group-hover:scale-105 transition-transform duration-700">
+                    <div class="relative z-10 p-4 space-y-2 text-left">
+                        <span class="text-primaryAccent font-heading text-[10px] font-bold tracking-widest uppercase block bg-brandWhite/90 backdrop-blur-md px-3 py-1 rounded-full w-max">Pusat Sunrise</span>
+                        <h3 class="text-brandWhite font-heading text-lg font-bold uppercase tracking-wider">Pantai Timur</h3>
+                        <p class="text-white/80 font-light text-xs line-clamp-2">Sangat ideal untuk mendayung santai di perairan berkarakter tenang seperti kaca.</p>
+                    </div>
+                </div>
+
+                <!-- Destinasi 2 -->
+                <div onclick="showDestinationDetail('barat')" class="group cursor-pointer bg-brandWhite rounded-[2rem] overflow-hidden p-3 shadow-premium-low hover:shadow-premium-mid transition-all duration-300 relative h-96 flex flex-col justify-end" data-aos="fade-up">
+                    <img loading="lazy" src="./activity_family_paddle_1780802642083.webp" alt="Pantai Barat Pangandaran" class="absolute inset-0 w-full h-full object-cover filter brightness-[0.75] group-hover:scale-105 transition-transform duration-700">
+                    <div class="relative z-10 p-4 space-y-2 text-left">
+                        <span class="text-secondaryAccent font-heading text-[10px] font-bold tracking-widest uppercase block bg-brandWhite/90 backdrop-blur-md px-3 py-1 rounded-full w-max">Glow Matahari Terbenam</span>
+                        <h3 class="text-brandWhite font-heading text-lg font-bold uppercase tracking-wider">Pantai Barat</h3>
+                        <p class="text-white/80 font-light text-xs line-clamp-2">Bentangan pasir yang luas dengan pemandangan cakrawala senja sore yang dramatis.</p>
+                    </div>
+                </div>
+
+                <!-- Destinasi 3 -->
+                <div onclick="showDestinationDetail('green')" class="group cursor-pointer bg-brandWhite rounded-[2rem] overflow-hidden p-3 shadow-premium-low hover:shadow-premium-mid transition-all duration-300 relative h-96 flex flex-col justify-end" data-aos="fade-up">
+                    <img loading="lazy" src="./activity_green_canyon_1780802628294.webp" alt="Green Canyon Indonesia" class="absolute inset-0 w-full h-full object-cover filter brightness-[0.75] group-hover:scale-105 transition-transform duration-700">
+                    <div class="relative z-10 p-4 space-y-2 text-left">
+                        <span class="text-primaryAccent font-heading text-[10px] font-bold tracking-widest uppercase block bg-brandWhite/90 backdrop-blur-md px-3 py-1 rounded-full w-max">Ngarai Hijau</span>
+                        <h3 class="text-brandWhite font-heading text-lg font-bold uppercase tracking-wider">Green Canyon</h3>
+                        <p class="text-white/80 font-light text-xs line-clamp-2">Tebing batu karst yang dibalut rimbunnya hutan hijau dan aliran air sungai yang jernih.</p>
+                    </div>
+                </div>
+
+                <!-- Destinasi 4 -->
+                <div onclick="showDestinationDetail('citumang')" class="group cursor-pointer bg-brandWhite rounded-[2rem] overflow-hidden p-3 shadow-premium-low hover:shadow-premium-mid transition-all duration-300 relative h-96 flex flex-col justify-end" data-aos="fade-up">
+                    <img loading="lazy" src="./activity_sunrise_paddle_1780802614704.webp" alt="Wisata Citumang" class="absolute inset-0 w-full h-full object-cover filter brightness-[0.75] group-hover:scale-105 transition-transform duration-700">
+                    <div class="relative z-10 p-4 space-y-2 text-left">
+                        <span class="text-secondaryAccent font-heading text-[10px] font-bold tracking-widest uppercase block bg-brandWhite/90 backdrop-blur-md px-3 py-1 rounded-full w-max">Kolam Alami Hutan</span>
+                        <h3 class="text-brandWhite font-heading text-lg font-bold uppercase tracking-wider">Citumang</h3>
+                        <p class="text-white/80 font-light text-xs line-clamp-2">Aliran air tawar berwarna pirus teduh yang sejuk di bawah rimbun pohon hutan tropis.</p>
+                    </div>
+                </div>
+
+                <!-- Destinasi 5 -->
+                <div onclick="showDestinationDetail('madasari')" class="group cursor-pointer bg-brandWhite rounded-[2rem] overflow-hidden p-3 shadow-premium-low hover:shadow-premium-mid transition-all duration-300 relative h-96 flex flex-col justify-end" data-aos="fade-up">
+                    <img loading="lazy" src="./activity_rock_formation_1780802654815.webp" alt="Pantai Madasari" class="absolute inset-0 w-full h-full object-cover filter brightness-[0.75] group-hover:scale-105 transition-transform duration-700">
+                    <div class="relative z-10 p-4 space-y-2 text-left">
+                        <span class="text-primaryAccent font-heading text-[10px] font-bold tracking-widest uppercase block bg-brandWhite/90 backdrop-blur-md px-3 py-1 rounded-full w-max">Pulau Batu Megah</span>
+                        <h3 class="text-brandWhite font-heading text-lg font-bold uppercase tracking-wider">Pantai Madasari</h3>
+                        <p class="text-white/80 font-light text-xs line-clamp-2">Pilar batu karang legendaris yang kokoh menyapa deburan ombak laut lepas.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="packages" class="py-24 px-6 md:px-12 bg-brandWhite" data-aos="fade-up">
+        <div class="max-w-7xl mx-auto space-y-16">
+            <div class="text-center max-w-2xl mx-auto space-y-4">
+                <span class="text-primaryAccent font-heading text-sm font-bold uppercase tracking-widest block">Paket Liburan Menarik</span>
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-brandDark uppercase" data-aos="fade-down">Pilih Paket Pengalaman</h2>
+                <div class="w-20 h-1 bg-primaryAccent mx-auto rounded-full"></div>
+                <p class="text-textMain font-light text-sm md:text-base">
+                    Petualangan komplit yang dirancang sedemikian rupa demi kenyamanan Anda. Aman, bersahabat untuk pemula, dan sangat berkesan.
+                </p>
+            </div>
+
+            <!-- Tiga Kartu Paket Premium -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+                
+                <!-- Paket 1 -->
+                <div class="bg-neutralLight rounded-[2rem] p-8 border border-gray-100 hover:border-primaryAccent/30 shadow-premium-low hover:shadow-premium-mid transition-all duration-300 flex flex-col justify-between">
+                    <div class="space-y-6 text-left">
+                        <div class="flex items-center justify-between">
+                            <span class="text-primaryAccent font-heading text-xs font-bold uppercase tracking-widest bg-primaryAccent/10 px-4 py-1.5 rounded-full">Ramah Pemula</span>
+                            <span class="text-textMain text-xs font-bold font-heading uppercase tracking-wide">IDR 250K / Pax</span>
+                        </div>
+                        <h3 class="font-heading font-bold text-2xl text-brandDark uppercase tracking-wider">Beginner Experience</h3>
+                        <p class="text-sm text-textMain font-light leading-relaxed">
+                            Kuasai teknik keseimbangan mendayung dasar di area teluk dangkal yang tenang. Didampingi pemandu penuh kesabaran agar Anda percaya diri di air dalam waktu singkat.
+                        </p>
+                        <div class="border-t border-gray-200/60 pt-6 space-y-4">
+                            <div class="flex items-center space-x-3 text-xs">
+                                <i data-lucide="user-check" class="w-4 h-4 text-primaryAccent shrink-0"></i>
+                                <span class="text-brandDark font-medium">1 Pemandu Pendamping Eksklusif</span>
+                            </div>
+                            <div class="flex items-center space-x-3 text-xs">
+                                <i data-lucide="shield" class="w-4 h-4 text-primaryAccent shrink-0"></i>
+                                <span class="text-brandDark font-medium">Perlengkapan Keamanan Lengkap</span>
+                            </div>
+                            <div class="flex items-center space-x-3 text-xs">
+                                <i data-lucide="camera" class="w-4 h-4 text-primaryAccent shrink-0"></i>
+                                <span class="text-brandDark font-medium">Dokumentasi Foto Standar</span>
+                            </div>
+                            <div class="flex items-center space-x-3 text-xs">
+                                <i data-lucide="clock" class="w-4 h-4 text-primaryAccent shrink-0"></i>
+                                <span class="text-brandDark font-medium">Waktu Healing: 2 Jam Sesi</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-8">
+                        <button onclick="bookExperience('Beginner Experience', 250000)" class="w-full bg-brandDark hover:bg-primaryAccent text-brandWhite font-heading font-bold text-xs uppercase tracking-widest py-4 rounded-full transition-colors duration-300 shadow-premium-mid">
+                            Pilih Paket Ini
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Paket 2 (Paket Unggulan) -->
+                <div class="bg-neutralLight rounded-[2rem] p-8 border-2 border-primaryAccent shadow-premium-mid flex flex-col justify-between relative lg:-translate-y-2">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primaryAccent text-brandWhite text-[10px] font-heading font-bold uppercase tracking-widest px-6 py-1.5 rounded-full shadow-premium-mid">
+                        Pilihan Terlaris Wisatawan
+                    </div>
+                    <div class="space-y-6 text-left pt-2">
+                        <div class="flex items-center justify-between">
+                            <span class="text-secondaryAccent font-heading text-xs font-bold uppercase tracking-widest bg-secondaryAccent/10 px-4 py-1.5 rounded-full">Sangat Indah</span>
+                            <span class="text-textMain text-xs font-bold font-heading uppercase tracking-wide">IDR 350K / Pax</span>
+                        </div>
+                        <h3 class="font-heading font-bold text-2xl text-brandDark uppercase tracking-wider">Sunrise Experience</h3>
+                        <p class="text-sm text-textMain font-light leading-relaxed">
+                            Mendayung lembut di atas air setenang cermin sambil menyambut fajar menyingsing di Pantai Timur. Diabadikan menggunakan lensa premium dan drone udara.
+                        </p>
+                        <div class="border-t border-gray-200/60 pt-6 space-y-4">
+                            <div class="flex items-center space-x-3 text-xs">
+                                <i data-lucide="user-check" class="w-4 h-4 text-primaryAccent shrink-0"></i>
+                                <span class="text-brandDark font-medium">1 Guide Lokal Gaul Senior Berpengalaman</span>
+                            </div>
+                            <div class="flex items-center space-x-3 text-xs">
+                                <i data-lucide="shield" class="w-4 h-4 text-primaryAccent shrink-0"></i>
+                                <span class="text-brandDark font-medium">Papan Red Paddle Co. &amp; Rompi Kelas Atas</span>
+                            </div>
+                            <div class="flex items-center space-x-3 text-xs">
+                                <i data-lucide="image" class="w-4 h-4 text-primaryAccent shrink-0"></i>
+                                <span class="text-brandDark font-medium">Video Drone Udara &amp; Foto DSLR Keren</span>
+                            </div>
+                            <div class="flex items-center space-x-3 text-xs">
+                                <i data-lucide="coffee" class="w-4 h-4 text-primaryAccent shrink-0"></i>
+                                <span class="text-brandDark font-medium">Sajian Teh Hangat / Kopi Jawa Lokal</span>
+                            </div>
+                            <div class="flex items-center space-x-3 text-xs">
+                                <i data-lucide="clock" class="w-4 h-4 text-primaryAccent shrink-0"></i>
+                                <span class="text-brandDark font-medium">Waktu Healing: 3 Jam Sesi</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-8">
+                        <button onclick="bookExperience('Sunrise Experience', 350000)" class="w-full bg-primaryAccent hover:bg-brandDark text-brandWhite font-heading font-bold text-xs uppercase tracking-widest py-4 rounded-full transition-colors duration-300 shadow-premium-mid">
+                            Pilih Paket Ini
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Paket 3 -->
+                <div class="bg-neutralLight rounded-[2rem] p-8 border border-gray-100 hover:border-primaryAccent/30 shadow-premium-low hover:shadow-premium-mid transition-all duration-300 flex flex-col justify-between">
+                    <div class="space-y-6 text-left">
+                        <div class="flex items-center justify-between">
+                            <span class="text-primaryAccent font-heading text-xs font-bold uppercase tracking-widest bg-primaryAccent/10 px-4 py-1.5 rounded-full">Petualangan Seru</span>
+                            <span class="text-textMain text-xs font-bold font-heading uppercase tracking-wide">IDR 500K / Pax</span>
+                        </div>
+                        <h3 class="font-heading font-bold text-2xl text-brandDark uppercase tracking-wider">Adventure Combo</h3>
+                        <p class="text-sm text-textMain font-light leading-relaxed">
+                            Bagi pecinta eksplorasi alam sejati. Paket lengkap melintasi titik laut tenang, menyelam menyapa karang pasir putih, serta bersantai menikmati hidangan kelapa segar.
+                        </p>
+                        <div class="border-t border-gray-200/60 pt-6 space-y-4">
+                            <div class="flex items-center space-x-3 text-xs">
+                                <i data-lucide="map" class="w-4 h-4 text-primaryAccent shrink-0"></i>
+                                <span class="text-brandDark font-medium">Eksplorasi Lintas Pantai Barat &amp; Timur</span>
+                            </div>
+                            <div class="flex items-center space-x-3 text-xs">
+                                <i data-lucide="anchor" class="w-4 h-4 text-primaryAccent shrink-0"></i>
+                                <span class="text-brandDark font-medium">Alat Snorkeling Premium &amp; Kantong Apung</span>
+                            </div>
+                            <div class="flex items-center space-x-3 text-xs">
+                                <i data-lucide="video" class="w-4 h-4 text-primaryAccent shrink-0"></i>
+                                <span class="text-brandDark font-medium">Rekaman Video Menggunakan Kamera GoPro</span>
+                            </div>
+                            <div class="flex items-center space-x-3 text-xs">
+                                <i data-lucide="utensils" class="w-4 h-4 text-primaryAccent shrink-0"></i>
+                                <span class="text-brandDark font-medium">Kelapa Muda Organik Segar &amp; Kudapan Lokal</span>
+                            </div>
+                            <div class="flex items-center space-x-3 text-xs">
+                                <i data-lucide="clock" class="w-4 h-4 text-primaryAccent shrink-0"></i>
+                                <span class="text-brandDark font-medium">Waktu Healing: 5 Jam Perjalanan</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-8">
+                        <button onclick="bookExperience('Adventure Combo', 500000)" class="w-full bg-brandDark hover:bg-primaryAccent text-brandWhite font-heading font-bold text-xs uppercase tracking-widest py-4 rounded-full transition-colors duration-300 shadow-premium-mid">
+                            Pilih Paket Ini
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-24 px-6 md:px-12 bg-neutralLight" data-aos="fade-up">
+        <div class="max-w-7xl mx-auto space-y-16">
+            <div class="text-center max-w-2xl mx-auto space-y-4">
+                <span class="text-primaryAccent font-heading text-sm font-bold uppercase tracking-widest block">Potret Kebahagiaan</span>
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-brandDark uppercase" data-aos="fade-down">Momen di Atas Samudera</h2>
+                <div class="w-20 h-1 bg-secondaryAccent mx-auto rounded-full"></div>
+                <p class="text-textMain font-light text-sm md:text-base">
+                    Lihat galeri foto jujur tanpa filter dari para petualang laut yang menemukan kebebasan berkendara di atas papan kami.
+                </p>
+            </div>
+
+            <!-- Tata Letak Masonry Galeri -->
+            <div class="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
+                <!-- Foto 1 -->
+                <div class="break-inside-avoid reveal-container shadow-premium-low hover:shadow-premium-mid transition-all duration-300 cursor-pointer group" onclick="openLightbox('./pangandaran_paddle_board2.webp', 'Garis barisan pendayung saat menyambut pagi')" data-aos="zoom-in">
+                    <img loading="lazy" src="./pangandaran_paddle_board2.webp" alt="Matahari terbit yang indah" class="reveal-image w-full h-auto object-cover">
+                    <div class="p-4 bg-brandWhite border-t border-gray-100 flex items-center justify-between text-xs" data-aos="fade-up">
+                        <span class="font-heading font-bold uppercase text-brandDark tracking-wider">Matahari Terbit Pantai Timur</span>
+                        <span class="text-primaryAccent"><i data-lucide="heart" class="w-4 h-4 fill-current"></i></span>
+                    </div>
+                </div>
+                <!-- Foto 2 -->
+                <div class="break-inside-avoid reveal-container shadow-premium-low hover:shadow-premium-mid transition-all duration-300 cursor-pointer group" onclick="openLightbox('./activity_sunrise_paddle_1780802614704.webp', 'Bersenang-senang mendayung dengan teman di laut teduh')" data-aos="zoom-in">
+                    <img loading="lazy" src="./activity_sunrise_paddle_1780802614704.webp" alt="Mendayung bersama" class="reveal-image w-full h-auto object-cover">
+                    <div class="p-4 bg-brandWhite border-t border-gray-100 flex items-center justify-between text-xs" data-aos="fade-up">
+                        <span class="font-heading font-bold uppercase text-brandDark tracking-wider">Harmoni di Atas Air</span>
+                        <span class="text-primaryAccent"><i data-lucide="heart" class="w-4 h-4 fill-current"></i></span>
+                    </div>
+                </div>
+                <!-- Foto 3 -->
+                <div class="break-inside-avoid reveal-container shadow-premium-low hover:shadow-premium-mid transition-all duration-300 cursor-pointer group" onclick="openLightbox('./pangandaran_paddle_board3.webp', 'Keindahan sunset Pantai Barat')" data-aos="zoom-in">
+                    <img loading="lazy" src="./pangandaran_paddle_board3.webp" alt="Pesona senja" class="reveal-image w-full h-auto object-cover">
+                    <div class="p-4 bg-brandWhite border-t border-gray-100 flex items-center justify-between text-xs" data-aos="fade-up">
+                        <span class="font-heading font-bold uppercase text-brandDark tracking-wider">Senja Jingga Pantai Barat</span>
+                        <span class="text-primaryAccent"><i data-lucide="heart" class="w-4 h-4 fill-current"></i></span>
+                    </div>
+                </div>
+                <!-- Foto 4 -->
+                <div class="break-inside-avoid reveal-container shadow-premium-low hover:shadow-premium-mid transition-all duration-300 cursor-pointer group" onclick="openLightbox('./activity_family_paddle_1780802642083.webp', 'Bersantai menikmati jernihnya air laut pirus')" data-aos="zoom-in">
+                    <img loading="lazy" src="./activity_family_paddle_1780802642083.webp" alt="Air jernih pirus" class="reveal-image w-full h-auto object-cover">
+                    <div class="p-4 bg-brandWhite border-t border-gray-100 flex items-center justify-between text-xs" data-aos="fade-up">
+                        <span class="font-heading font-bold uppercase text-brandDark tracking-wider">Meluncur Teduh</span>
+                        <span class="text-primaryAccent"><i data-lucide="heart" class="w-4 h-4 fill-current"></i></span>
+                    </div>
+                </div>
+                <!-- Foto 5 -->
+                <div class="break-inside-avoid reveal-container shadow-premium-low hover:shadow-premium-mid transition-all duration-300 cursor-pointer group" onclick="openLightbox('./activity_rock_formation_1780802654815.webp', 'Karang batu megah Pantai Madasari yang ikonik')" data-aos="zoom-in">
+                    <img loading="lazy" src="./activity_rock_formation_1780802654815.webp" alt="Karang batu Madasari" class="reveal-image w-full h-auto object-cover">
+                    <div class="p-4 bg-brandWhite border-t border-gray-100 flex items-center justify-between text-xs" data-aos="fade-up">
+                        <span class="font-heading font-bold uppercase text-brandDark tracking-wider">Karang Batu Madasari</span>
+                        <span class="text-primaryAccent"><i data-lucide="heart" class="w-4 h-4 fill-current"></i></span>
+                    </div>
+                </div>
+                <!-- Foto 6 -->
+                <div class="break-inside-avoid reveal-container shadow-premium-low hover:shadow-premium-mid transition-all duration-300 cursor-pointer group" onclick="openLightbox('./activity_green_canyon_1780802628294.webp', 'Mendayung di dekat tebing karst megah Madasari')" data-aos="zoom-in">
+                    <img loading="lazy" src="./activity_green_canyon_1780802628294.webp" alt="Karang laut Madasari" class="reveal-image w-full h-auto object-cover">
+                    <div class="p-4 bg-brandWhite border-t border-gray-100 flex items-center justify-between text-xs" data-aos="fade-up">
+                        <span class="font-heading font-bold uppercase text-brandDark tracking-wider">Pilar Karang Madasari</span>
+                        <span class="text-primaryAccent"><i data-lucide="heart" class="w-4 h-4 fill-current"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 md:px-12 bg-brandDark text-brandWhite relative overflow-hidden" data-aos="fade-up">
+        <!-- Efek Latar Belakang -->
+        <div class="absolute w-60 h-60 bg-primaryAccent/10 rounded-full blur-2xl top-0 left-0 pointer-events-none"></div>
+        <div class="absolute w-60 h-60 bg-secondaryAccent/10 rounded-full blur-2xl bottom-0 right-0 pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto relative z-10 grid grid-cols-2 lg:grid-cols-4 gap-12 text-center" id="statistics-panel">
+            <div class="space-y-2">
+                <h3 class="text-5xl md:text-6xl font-bold text-primaryAccent font-heading tracking-wide" id="stat-visitors">0</h3>
+                <div class="text-[11px] font-heading font-bold uppercase tracking-widest text-brandWhite/70">Pengunjung Bahagia</div>
+                <p class="text-xs text-textMain">Lebih dari lima tahun menemani kisah perjalanan laut wisatawan.</p>
+            </div>
+            <div class="space-y-2 lg:border-l border-brandWhite/10 lg:pl-8">
+                <h3 class="text-5xl md:text-6xl font-bold text-secondaryAccent font-heading tracking-wide" id="stat-rating">0</h3>
+                <div class="text-[11px] font-heading font-bold uppercase tracking-widest text-brandWhite/70">Rata-rata Rating</div>
+                <p class="text-xs text-textMain">Ulasan bintang lima yang luar biasa di Google Maps &amp; TripAdvisor.</p>
+            </div>
+            <div class="space-y-2 lg:border-l border-brandWhite/10 lg:pl-8">
+                <h3 class="text-5xl md:text-6xl font-bold text-primaryAccent font-heading tracking-wide" id="stat-years">0</h3>
+                <div class="text-[11px] font-heading font-bold uppercase tracking-widest text-brandWhite/70">Tahun Pengalaman</div>
+                <p class="text-xs text-textMain">Merintis dan mendefinisikan standar keselamatan mendayung lokal.</p>
+            </div>
+            <div class="space-y-2 lg:border-l border-brandWhite/10 lg:pl-8">
+                <h3 class="text-5xl md:text-6xl font-bold text-secondaryAccent font-heading tracking-wide" id="stat-guide">0</h3>
+                <div class="text-[11px] font-heading font-bold uppercase tracking-widest text-brandWhite/70">Pemandu Lokal</div>
+                <p class="text-xs text-textMain">Berkomitmen 100% memberdayakan pemuda dan nelayan daerah asli.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 md:px-12 bg-neutralLight" data-aos="fade-up">
+        <div class="max-w-7xl mx-auto space-y-16">
+            <div class="text-center max-w-2xl mx-auto space-y-4">
+                <span class="text-primaryAccent font-heading text-sm font-bold uppercase tracking-widest block">Ulasan Jujur</span>
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-brandDark uppercase" data-aos="fade-down">Apa Kata Wisatawan</h2>
+                <div class="w-20 h-1 bg-primaryAccent mx-auto rounded-full"></div>
+            </div>
+
+            <!-- Kartu Testimoni -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Testimoni 1 -->
+                <div class="bg-brandWhite rounded-[2rem] p-8 shadow-premium-low border border-gray-100 flex flex-col justify-between text-left space-y-8" data-aos="fade-up">
+                    <div class="space-y-4">
+                        <div class="flex text-secondaryAccent">
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        </div>
+                        <p class="text-textMain text-sm font-light leading-relaxed italic">
+                            "Momen matahari terbit di Pantai Timur benar-benar magis! Mengapung tenang di air yang bening dengan kilau sinar emas langsung di depan kami terasa sangat syahdu. Pemandu lokalnya sangat sabar mengajari saya yang pemula."
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-4 border-t border-gray-100 pt-6">
+                        <img loading="lazy" src="./avatar_andini_1780802845779.webp" alt="Andini Safitri" class="w-12 h-12 rounded-full object-cover border border-primaryAccent">
+                        <div>
+                            <h4 class="font-heading font-bold text-sm text-brandDark uppercase tracking-wider">Andini Safitri</h4>
+                            <span class="text-[10px] text-textMain block uppercase tracking-wider">Wisatawan Solo, Jakarta</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimoni 2 -->
+                <div class="bg-brandWhite rounded-[2rem] p-8 shadow-premium-low border border-gray-100 flex flex-col justify-between text-left space-y-8" data-aos="fade-up">
+                    <div class="space-y-4">
+                        <div class="flex text-secondaryAccent">
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        </div>
+                        <p class="text-textMain text-sm font-light leading-relaxed italic">
+                            "Pelayanan kru luar biasa bersahabat. Saya awalnya takut tidak seimbang, namun pemandu kami dengan cekatan melatih posisi kaki saya hingga langsung bisa berdiri dan berseluncur lancar di bawah 15 menit!"
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-4 border-t border-gray-100 pt-6">
+                        <img loading="lazy" src="./avatar_budi_1780802856780.webp" alt="Budi Setiawan" class="w-12 h-12 rounded-full object-cover border border-primaryAccent">
+                        <div>
+                            <h4 class="font-heading font-bold text-sm text-brandDark uppercase tracking-wider">Budi Setiawan</h4>
+                            <span class="text-[10px] text-textMain block uppercase tracking-wider">Keluarga Wisata, Bandung</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimoni 3 -->
+                <div class="bg-brandWhite rounded-[2rem] p-8 shadow-premium-low border border-gray-100 flex flex-col justify-between text-left space-y-8" data-aos="fade-up">
+                    <div class="space-y-4">
+                        <div class="flex text-secondaryAccent">
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        </div>
+                        <p class="text-textMain text-sm font-light leading-relaxed italic">
+                            "Tim yang luar biasa profesional. Kami memesan paket kustom dan mereka memberikan layanan drone udara terbaik yang langsung viral di saluran media perjalanan kami. Destinasi yang sangat wajib dicoba di Jawa Barat."
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-4 border-t border-gray-100 pt-6">
+                        <img loading="lazy" src="./avatar_andini_1780802845779.webp" alt="Rian &amp; Amalia" class="w-12 h-12 rounded-full object-cover border border-primaryAccent">
+                        <div>
+                            <h4 class="font-heading font-bold text-sm text-brandDark uppercase tracking-wider">Rian &amp; Amalia</h4>
+                            <span class="text-[10px] text-textMain block uppercase tracking-wider">Pembuat Konten, Jogja</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 md:px-12 bg-brandWhite" data-aos="fade-up">
+        <div class="max-w-7xl mx-auto space-y-16">
+            <div class="text-center max-w-2xl mx-auto space-y-4">
+                <span class="text-primaryAccent font-heading text-sm font-bold uppercase tracking-widest block">Ikuti Kami di Media Sosial</span>
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-brandDark uppercase" data-aos="fade-down">#PangandaranPaddleBoard</h2>
+                <div class="w-20 h-1 bg-secondaryAccent mx-auto rounded-full"></div>
+            </div>
+
+            <!-- Grid Foto Instagram -->
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <div onclick="openInstagramModal('@petualang_bebas: Menyambut pagi hari yang tenang di Pantai Timur Pangandaran.')" class="relative group aspect-square rounded-[1.5rem] overflow-hidden cursor-pointer shadow-premium-low">
+                    <img loading="lazy" src="./pangandaran_paddle_board2.webp" alt="Instagram 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-brandDark/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center space-y-2">
+                        <i data-lucide="instagram" class="w-8 h-8 text-brandWhite"></i>
+                        <span class="text-[10px] text-brandWhite font-heading font-bold uppercase tracking-widest">Lihat Postingan</span>
+                    </div>
+                </div>
+
+                <div onclick="openInstagramModal('@keluarga_ceria: Pelatih dayung lokal terbaik! Anak-anak sangat senang.')" class="relative group aspect-square rounded-[1.5rem] overflow-hidden cursor-pointer shadow-premium-low">
+                    <img loading="lazy" src="./activity_sunrise_paddle_1780802614704.webp" alt="Instagram 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-brandDark/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center space-y-2">
+                        <i data-lucide="instagram" class="w-8 h-8 text-brandWhite"></i>
+                        <span class="text-[10px] text-brandWhite font-heading font-bold uppercase tracking-widest">Lihat Postingan</span>
+                    </div>
+                </div>
+
+                <div onclick="openInstagramModal('@senja_tropis: Meluncur santai di laut lepas menyambut mentari sore Pantai Barat.')" class="relative group aspect-square rounded-[1.5rem] overflow-hidden cursor-pointer shadow-premium-low">
+                    <img loading="lazy" src="./pangandaran_paddle_board3.webp" alt="Instagram 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-brandDark/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center space-y-2">
+                        <i data-lucide="instagram" class="w-8 h-8 text-brandWhite"></i>
+                        <span class="text-[10px] text-brandWhite font-heading font-bold uppercase tracking-widest">Lihat Postingan</span>
+                    </div>
+                </div>
+
+                <div onclick="openInstagramModal('@rimba_hijau: Menjelajahi ngarai indah Citumang. Air tawar jernih yang menyejukkan.')" class="relative group aspect-square rounded-[1.5rem] overflow-hidden cursor-pointer shadow-premium-low">
+                    <img loading="lazy" src="./activity_green_canyon_1780802628294.webp" alt="Instagram 4" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-brandDark/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center space-y-2">
+                        <i data-lucide="instagram" class="w-8 h-8 text-brandWhite"></i>
+                        <span class="text-[10px] text-brandWhite font-heading font-bold uppercase tracking-widest">Lihat Postingan</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-24 px-6 md:px-12 bg-neutralLight" data-aos="fade-up">
+        <div class="max-w-4xl mx-auto space-y-16">
+            <div class="text-center max-w-2xl mx-auto space-y-4">
+                <span class="text-primaryAccent font-heading text-sm font-bold uppercase tracking-widest block">Bantuan Informasi</span>
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-brandDark uppercase" data-aos="fade-down">Tanya &amp; Jawab</h2>
+                <div class="w-20 h-1 bg-primaryAccent mx-auto rounded-full"></div>
+            </div>
+
+            <!-- Daftar Accordion -->
+            <div class="space-y-4">
+                
+                <!-- FAQ Item 1 -->
+                <div class="bg-brandWhite rounded-2xl border border-gray-100 shadow-premium-low overflow-hidden transition-all duration-300" data-aos="fade-up">
+                    <button onclick="toggleAccordion('faq-1')" class="w-full px-8 py-6 text-left flex items-center justify-between font-heading font-bold text-brandDark text-base uppercase tracking-wider focus:outline-none">
+                        <span>Apakah saya memerlukan pengalaman mendayung sebelumnya?</span>
+                        <i data-lucide="chevron-down" id="icon-faq-1" class="w-5 h-5 text-primaryAccent transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-1" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div class="px-8 pb-6 text-sm text-textMain font-light leading-relaxed border-t border-gray-100 pt-4">
+                            Sama sekali tidak perlu! Lebih dari 80% tamu kami adalah pemula yang baru pertama kali menyentuh papan dayung. Seluruh paket petualangan kami sudah mencakup latihan dasar di darat, teori posisi keseimbangan kaki, dan pendampingan penuh oleh pemandu berpengalaman di area air yang tenang.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-brandWhite rounded-2xl border border-gray-100 shadow-premium-low overflow-hidden transition-all duration-300" data-aos="fade-up">
+                    <button onclick="toggleAccordion('faq-2')" class="w-full px-8 py-6 text-left flex items-center justify-between font-heading font-bold text-brandDark text-base uppercase tracking-wider focus:outline-none">
+                        <span>Apakah aman untuk anak-anak dan keluarga?</span>
+                        <i data-lucide="chevron-down" id="icon-faq-2" class="w-5 h-5 text-primaryAccent transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-2" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div class="px-8 pb-6 text-sm text-textMain font-light leading-relaxed border-t border-gray-100 pt-4">
+                            Sangat aman. Kami menyediakan papan dayung tandem khusus berukuran ekstra lebar yang sangat stabil serta rompi keselamatan berdaya apung tinggi bersertifikasi internasional khusus anak-anak. Pemandu lokal kami akan selalu berada di samping papan Anda untuk menjaga keamanan bersama.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-brandWhite rounded-2xl border border-gray-100 shadow-premium-low overflow-hidden transition-all duration-300" data-aos="fade-up">
+                    <button onclick="toggleAccordion('faq-3')" class="w-full px-8 py-6 text-left flex items-center justify-between font-heading font-bold text-brandDark text-base uppercase tracking-wider focus:outline-none">
+                        <span>Apa saja barang yang sebaiknya saya bawa saat sesi mendayung?</span>
+                        <i data-lucide="chevron-down" id="icon-faq-3" class="w-5 h-5 text-primaryAccent transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-3" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div class="px-8 pb-6 text-sm text-textMain font-light leading-relaxed border-t border-gray-100 pt-4">
+                            Kami sangat menyarankan Anda membawa baju renang yang nyaman, pakaian pelindung sinar matahari (rashguard), tabir surya ramah lingkungan, kacamata hitam, serta pakaian ganti kering. Kami juga meminjamkan tas kedap air (dry bag) untuk menjaga gawai Anda tetap aman selama di atas air.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="bg-brandWhite rounded-2xl border border-gray-100 shadow-premium-low overflow-hidden transition-all duration-300" data-aos="fade-up">
+                    <button onclick="toggleAccordion('faq-4')" class="w-full px-8 py-6 text-left flex items-center justify-between font-heading font-bold text-brandDark text-base uppercase tracking-wider focus:outline-none">
+                        <span>Bagaimana kebijakan pembatalan apabila cuaca buruk?</span>
+                        <i data-lucide="chevron-down" id="icon-faq-4" class="w-5 h-5 text-primaryAccent transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-4" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div class="px-8 pb-6 text-sm text-textMain font-light leading-relaxed border-t border-gray-100 pt-4">
+                            Keselamatan Anda adalah prioritas mutlak kami. Jika kondisi angin kencang atau ombak besar dinilai berisiko oleh tim kami, kami akan menawarkan alternatif mendayung di aliran sungai Citumang yang terlindung dari angin laut, menjadwal ulang hari sesi Anda, atau memberikan pengembalian dana penuh 100%.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="py-24 px-6 md:px-12 bg-brandDark text-brandWhite relative overflow-hidden" data-aos="fade-up">
+        <!-- Floating Glow -->
+        <div class="absolute w-96 h-96 bg-primaryAccent/10 rounded-full blur-3xl -top-12 -left-12 pointer-events-none"></div>
+        <div class="absolute w-96 h-96 bg-secondaryAccent/10 rounded-full blur-3xl -bottom-12 -right-12 pointer-events-none"></div>
+
+        <div class="max-w-5xl mx-auto text-center space-y-12 relative z-10">
+            <div class="space-y-4 max-w-2xl mx-auto">
+                <span class="text-primaryAccent font-heading text-sm font-bold uppercase tracking-widest block">Kunci Jadwal Mendayung Anda</span>
+                <h2 class="text-4xl md:text-6xl font-bold tracking-tight uppercase" data-aos="fade-down">Sudah Siap Mencoba Petualangan Seru?</h2>
+                <p class="text-brandWhite/70 font-light text-base md:text-lg">
+                    Pilih paket pengalaman favorit Anda di bawah ini, lengkapi data pemesanan, dan sistem kami akan langsung menyusun draf pesan otomatis untuk dikirim ke konsier WhatsApp kami!
+                </p>
+            </div>
+
+            <!-- Form Interaktif -->
+            <div class="bg-brandWhite text-brandDark rounded-[2rem] p-8 md:p-12 shadow-premium-high text-left max-w-3xl mx-auto border border-white/10" data-aos="fade-up">
+                <form id="whatsapp-booking-form" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                    
+                    <!-- Pilihan Paket & Jumlah Tamu -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label class="block text-xs uppercase tracking-widest font-heading font-bold text-brandDark/70">Pilih Paket Pengalaman</label>
+                            <select id="booking-package" onchange="recalculatePrice()" class="w-full bg-neutralLight text-brandDark border border-gray-200 rounded-xl px-4 py-4 focus:outline-none focus:border-primaryAccent text-sm transition-all duration-300">
+                                <option value="Beginner Experience" data-price="250000">Beginner Experience — IDR 250.000/pax</option>
+                                <option value="Sunrise Experience" data-price="350000" selected="">Sunrise Experience — IDR 350.000/pax</option>
+                                <option value="Adventure Combo" data-price="500000">Adventure Combo — IDR 500.000/pax</option>
+                                <option value="Kustom Eksplorasi" data-price="150000">Sewa Lepas Papan — IDR 150.000/jam</option>
+                            </select>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="block text-xs uppercase tracking-widest font-heading font-bold text-brandDark/70">Jumlah Tamu (Wisatawan)</label>
+                            <div class="flex items-center border border-gray-200 rounded-xl overflow-hidden bg-neutralLight">
+                                <button type="button" onclick="adjustGuests(-1)" class="px-4 py-3 bg-neutralLight hover:bg-gray-200 text-brandDark font-bold transition-colors duration-300 focus:outline-none">-</button>
+                                <input type="number" id="booking-guests" value="2" min="1" max="25" readonly="" class="w-full bg-transparent text-center font-bold text-brandDark focus:outline-none text-sm">
+                                <button type="button" onclick="adjustGuests(1)" class="px-4 py-3 bg-neutralLight hover:bg-gray-200 text-brandDark font-bold transition-colors duration-300 focus:outline-none">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Informasi Pribadi -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label class="block text-xs uppercase tracking-widest font-heading font-bold text-brandDark/70">Nama Lengkap Anda</label>
+                            <input type="text" id="booking-name" required="" placeholder="Contoh: Amanda Lestari" class="w-full bg-neutralLight text-brandDark border border-gray-200 rounded-xl px-4 py-4 focus:outline-none focus:border-primaryAccent text-sm transition-all duration-300">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="block text-xs uppercase tracking-widest font-heading font-bold text-brandDark/70">Rencana Tanggal Main</label>
+                            <input type="date" id="booking-date" required="" class="w-full bg-neutralLight text-brandDark border border-gray-200 rounded-xl px-4 py-4 focus:outline-none focus:border-primaryAccent text-sm transition-all duration-300">
+                        </div>
+                    </div>
+
+                    <!-- Estimasi Biaya -->
+                    <div class="bg-primaryAccent/5 border border-primaryAccent/20 p-5 rounded-2xl flex items-center justify-between">
+                        <div class="space-y-1">
+                            <span class="text-[10px] text-textMain uppercase tracking-widest block">Estimasi Total Biaya</span>
+                            <span class="text-sm font-heading font-bold text-brandDark uppercase tracking-wider" id="booking-breakdown">Sunrise Experience (2 Orang)</span>
+                        </div>
+                        <span class="text-2xl font-bold font-heading text-primaryAccent" id="booking-total">IDR 700.000</span>
+                    </div>
+
+                    <!-- Tombol Eksekusi Pemesanan -->
+                    <button type="submit" class="w-full bg-[#25D366] hover:bg-brandDark text-brandWhite font-heading font-bold text-xs uppercase tracking-widest py-5 rounded-full flex items-center justify-center space-x-3 transition-colors duration-300 shadow-premium-mid">
+                        <i class="w-5 h-5 fill-current"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.182 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.963C16.59 1.98 14.122.953 11.493.953 6.056.953 1.633 5.325 1.629 10.75c-.001 1.732.464 3.42 1.345 4.927l-.997 3.641 3.73-.979c1.513.824 3.1 1.259 4.35 1.81zM17.13 14.36c-.28-.14-1.65-.814-1.906-.906-.255-.092-.44-.14-.625.14-.184.28-.717.906-.879 1.092-.162.186-.324.208-.604.068-.28-.14-1.18-.435-2.251-1.39-.832-.741-1.394-1.657-1.558-1.937-.162-.28-.017-.431.122-.57.126-.126.28-.324.42-.486.14-.162.185-.278.278-.463.092-.186.046-.347-.023-.486-.069-.14-.625-1.505-.856-2.06-.225-.545-.453-.47-.625-.479-.162-.008-.347-.01-.532-.01-.185 0-.486.07-.741.347-.255.278-.972.95-1.95 2.13-.978 1.18-.741 2.315 1.22 4.144.3 1.81 1.7 1.87 2.1 1.95.1.1.2.3.4.5 1.36 1.3 2.51 1.8 3.51 1.9.4.1.8.1 1.1 0 .4-.1.9-.3 1.1-.6s.4-.7.4-.9c.1-.2 0-.4-.1-.5z"></path></svg></i>
+                        <span>Kirim Pemesanan ke WhatsApp</span>
+                    </button>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-brandDark text-brandWhite py-16 px-6 md:px-12 border-t border-brandWhite/10">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                
+                <!-- Kolom 1: Profil Singkat -->
+                <div class="space-y-6">
+                    <a href="#" class="flex items-center space-x-3 group">
+                        <div class="w-10 h-10 rounded-full bg-primaryAccent flex items-center justify-center text-brandWhite">
+                            <i data-lucide="waves" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <span class="text-brandWhite font-heading text-lg tracking-widest block uppercase font-bold">Pangandaran</span>
+                            <span class="text-primaryAccent font-heading text-xs tracking-widest block -mt-1 font-semibold uppercase">Paddle Board</span>
+                        </div>
+                    </a>
+                    <p class="text-xs text-textMain leading-relaxed font-light">
+                        Mendefinisikan ulang cara terbaik menikmati eksplorasi bahari aktif di Pangandaran, Indonesia. Menyediakan petualangan yang aman, seru, dan berkualitas tinggi.
+                    </p>
+                    <div class="flex items-center space-x-4">
+                        <a href="#" class="w-8 h-8 rounded-full bg-brandWhite/5 flex items-center justify-center text-brandWhite hover:text-primaryAccent hover:bg-brandWhite/10 transition-colors">
+                            <i data-lucide="instagram" class="w-4 h-4"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-brandWhite/5 flex items-center justify-center text-brandWhite hover:text-primaryAccent hover:bg-brandWhite/10 transition-colors">
+                            <i data-lucide="facebook" class="w-4 h-4"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-brandWhite/5 flex items-center justify-center text-brandWhite hover:text-primaryAccent hover:bg-brandWhite/10 transition-colors">
+                            <i data-lucide="twitter" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Kolom 2: Tautan Navigasi -->
+                <div class="space-y-4">
+                    <h4 class="font-heading font-bold text-xs uppercase tracking-widest text-brandWhite/90">Tautan Pintas</h4>
+                    <div class="flex flex-col space-y-2.5 text-xs text-textMain uppercase tracking-widest font-semibold">
+                        <a href="#about" class="hover:text-primaryAccent transition-colors">Pengalaman</a>
+                        <a href="#activities" class="hover:text-primaryAccent transition-colors">Daftar Aktivitas</a>
+                        <a href="#destinations" class="hover:text-primaryAccent transition-colors">Lokasi Destinasi</a>
+                        <a href="#packages" class="hover:text-primaryAccent transition-colors">Daftar Paket Hemat</a>
+                    </div>
+                </div>
+
+                <!-- Kolom 3: Lokasi Basecamp -->
+                <div class="space-y-4">
+                    <h4 class="font-heading font-bold text-xs uppercase tracking-widest text-brandWhite/90">Basecamp Utama</h4>
+                    <p class="text-xs text-textMain leading-relaxed font-light">
+                        Jalan Bulak Laut No. 12B,<br>
+                        Pananjung, Kec. Pangandaran,<br>
+                        Jawa Barat 46396,<br>
+                        Indonesia
+                    </p>
+                    <div class="flex items-center space-x-2 text-[10px] text-primaryAccent font-heading font-bold tracking-widest uppercase">
+                        <i data-lucide="map-pin" class="w-4.5 h-4.5"></i>
+                        <span>Koordinat: 7.7011° S, 108.4907° E</span>
+                    </div>
+                </div>
+
+                <!-- Kolom 4: Jurnal Berlangganan -->
+                <div class="space-y-4">
+                    <h4 class="font-heading font-bold text-xs uppercase tracking-widest text-brandWhite/90">Laporan Pasang Laut</h4>
+                    <p class="text-xs text-textMain font-light">Dapatkan pembaruan berkala ramalan cuaca pasang laut, berita komunitas, dan waktu eksplorasi gua rahasia musiman.</p>
+                    <form onsubmit="handleNewsletterSubmit(event)" class="flex border border-brandWhite/15 rounded-xl overflow-hidden bg-brandWhite/5">
+                        <input type="email" id="newsletter-email" required="" placeholder="email.anda@travel.com" class="bg-transparent px-4 py-3 text-xs w-full text-brandWhite focus:outline-none placeholder:text-textMain">
+                        <button type="submit" class="bg-primaryAccent text-brandWhite font-heading font-bold text-[10px] px-4 hover:bg-secondaryAccent transition-colors uppercase tracking-widest">Ikut</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <!-- Bagian Legalitas -->
+            <div class="border-t border-brandWhite/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-[10px] uppercase tracking-widest font-heading font-bold text-textMain">
+                <p>© 2026 Pangandaran Paddle Board. Hak Cipta Dilindungi.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-primaryAccent">Kebijakan Privasi</a>
+                    <a href="#" class="hover:text-primaryAccent">Panduan Keselamatan</a>
+                    <a href="#" class="hover:text-primaryAccent">Aturan Perjalanan</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- MODAL INTERAKTIF DYNAMIC (NATIVE OVERLAYS) -->
+
+    <!-- Modal Detil Destinasi -->
+    <div id="destination-modal" class="hidden fixed inset-0 bg-brandDark/85 backdrop-blur-md z-50 flex items-center justify-center p-4">
+        <div class="bg-brandWhite max-w-xl w-full rounded-[2rem] p-6 md:p-8 relative border border-gray-100 shadow-premium-high text-left" data-aos="fade-up">
+            <button onclick="closeDestinationModal()" class="absolute top-6 right-6 text-textMain hover:text-brandDark">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+            <div id="dest-modal-content" class="space-y-6">
+                <!-- Dimuat secara dinamis oleh JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Foto Instagram -->
+    <div id="instagram-modal" class="hidden fixed inset-0 bg-brandDark/85 backdrop-blur-md z-50 flex items-center justify-center p-4">
+        <div class="bg-brandWhite max-w-sm w-full rounded-[2rem] p-6 md:p-8 text-center relative border border-gray-150 shadow-premium-high" data-aos="fade-up">
+            <button onclick="closeInstagramModal()" class="absolute top-6 right-6 text-textMain hover:text-brandDark">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+            <div class="space-y-6 pt-4">
+                <div class="w-16 h-16 bg-primaryAccent/10 text-primaryAccent rounded-full flex items-center justify-center mx-auto">
+                    <i data-lucide="instagram" class="w-8 h-8"></i>
+                </div>
+                <h3 class="font-heading font-bold text-xl text-brandDark uppercase tracking-wider">Instagram Feed</h3>
+                <p id="ig-modal-text" class="text-sm text-textMain leading-relaxed font-light"></p>
+                <span class="text-[10px] font-heading font-bold uppercase tracking-widest text-primaryAccent block bg-primaryAccent/10 px-4 py-2 rounded-full w-max mx-auto">Tag #PangandaranPaddleBoard</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Lightbox Galeri -->
+    <div id="lightbox-modal" class="hidden fixed inset-0 bg-brandDark/95 backdrop-blur-md z-50 flex items-center justify-center p-4" onclick="closeLightbox()">
+        <div class="max-w-4xl w-full relative">
+            <button class="absolute top-4 right-4 text-brandWhite hover:text-primaryAccent bg-brandDark/60 backdrop-blur-md rounded-full p-2.5">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+            <img loading="lazy" id="lightbox-image" src="" alt="Expanded View" class="w-full max-h-[85vh] object-contain rounded-2xl">
+            <p id="lightbox-caption" class="text-center text-brandWhite text-xs font-heading font-bold uppercase tracking-widest mt-4"></p>
+        </div>
+    </div>
+
+    <!-- Modal Sukses Tindakan Form -->
+    <div id="success-modal" class="hidden fixed inset-0 bg-brandDark/90 backdrop-blur-md z-50 flex items-center justify-center p-4">
+        <div class="bg-brandWhite max-w-md w-full rounded-[2rem] p-6 md:p-8 text-center border border-primaryAccent/20 shadow-premium-high space-y-6" data-aos="fade-up">
+            <div class="w-16 h-16 bg-primaryAccent/10 text-primaryAccent rounded-full flex items-center justify-center mx-auto">
+                <i data-lucide="check-circle" class="w-8 h-8"></i>
+            </div>
+            <h3 class="font-heading font-bold text-2xl text-brandDark uppercase tracking-wider" id="success-title">Terkonfirmasi!</h3>
+            <p id="success-message" class="text-sm text-textMain font-light leading-relaxed"></p>
+            <button onclick="closeSuccessModal()" class="w-full bg-brandDark hover:bg-primaryAccent text-brandWhite font-heading font-bold text-xs uppercase tracking-widest py-4 rounded-full transition-colors duration-300">
+                Tutup
+            </button>
+        </div>
+    </div>
+
+
+    <script>
+        // Memulai pembuatan ikon dari Lucide
+        lucide.createIcons();
+
+        // Kursor Ripple Mengikuti Mouse
+        const cursor = document.getElementById('interactive-cursor');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+
+        // Efek kursor membesar pada tautan, tombol, dll.
+        const linksAndButtons = document.querySelectorAll('a, button, select, input, [onclick]');
+        linksAndButtons.forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                cursor.classList.remove('hidden');
+                cursor.style.transform = 'translate(-50%, -50%) scale(1.6)';
+                cursor.style.borderColor = '#FFB434';
+            });
+            item.addEventListener('mouseleave', () => {
+                cursor.style.transform = 'translate(-50%, -50%) scale(1)';
+                cursor.style.borderColor = '#16D5CC';
+            });
+        });
+
+        // Sticky Navbar Blurring
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 40) {
+                navbar.classList.add('bg-brandWhite/90', 'backdrop-blur-md', 'shadow-premium-low', 'py-4');
+                navbar.classList.remove('py-6');
+            } else {
+                navbar.classList.remove('bg-brandWhite/90', 'backdrop-blur-md', 'shadow-premium-low', 'py-4');
+                navbar.classList.add('py-6');
+            }
+        });
+
+        // Navigasi Mobile Hamburgers
+        const mobileToggle = document.getElementById('mobile-menu-toggle');
+        const mobileOverlay = document.getElementById('mobile-overlay');
+        const menuIcon = document.getElementById('menu-icon');
+
+        mobileToggle.addEventListener('click', () => {
+            mobileOverlay.classList.toggle('hidden');
+            mobileOverlay.classList.toggle('flex');
+            
+            if (mobileOverlay.classList.contains('flex')) {
+                menuIcon.setAttribute('data-lucide', 'x');
+            } else {
+                menuIcon.setAttribute('data-lucide', 'menu');
+            }
+            lucide.createIcons();
+        });
+
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileOverlay.classList.add('hidden');
+                mobileOverlay.classList.remove('flex');
+                menuIcon.setAttribute('data-lucide', 'menu');
+                lucide.createIcons();
+            });
+        });
+
+        // Logika FAQ Accordion
+        function toggleAccordion(id) {
+            const accordion = document.getElementById(id);
+            const icon = document.getElementById('icon-' + id);
+            
+            if (accordion.style.maxHeight && accordion.style.maxHeight !== '0px') {
+                accordion.style.maxHeight = '0px';
+                icon.style.transform = 'rotate(0deg)';
+            } else {
+                accordion.style.maxHeight = accordion.scrollHeight + 'px';
+                icon.style.transform = 'rotate(180deg)';
+            }
+        }
+
+        // Basis Data Destinasi Lokal Pangandaran
+        const destDetails = {
+            timur: {
+                title: 'Pantai Timur Pangandaran',
+                badge: 'Pusat Sunrise Alami',
+                image: './activity_sunrise_paddle_1780802614704.webp',
+                text: 'Satu-satunya lokasi terbaik untuk menikmati matahari terbit. Pantai Timur memiliki karakteristik air laut yang luar biasa tenang di pagi hari, terlindung penuh dari angin lepas pantai yang kencang. Sangat direkomendasikan untuk petualangan fajar.',
+                safety: 'Sangat tenang. Sempurna untuk anak-anak, keluarga, dan pemula.'
+            },
+            barat: {
+                title: 'Pantai Barat',
+                badge: 'Keindahan Matahari Terbenam',
+                image: './activity_family_paddle_1780802642083.webp',
+                text: 'Garis pantai pasir putih yang luas bertemu langsung dengan lautan Hindia. Pantai Barat menjadi lokasi paling favorit untuk petualangan sore hari sembari menikmati langit senja kemerahan yang menyejukkan jiwa.',
+                safety: 'Embusan angin sedang. Direkomendasikan melakukan perjalanan bersama pemandu.'
+            },
+            green: {
+                title: 'Green Canyon (Muara Sungai)',
+                badge: 'Aliran Ngarai Hijau',
+                image: './activity_green_canyon_1780802628294.webp',
+                text: 'Sebuah perjalanan menyusuri gerbang tebing purba yang menakjubkan. Mendayung papan di area transisi muara sungai menuju laut Green Canyon memberikan sensasi menyatu dengan hutan hujan tropis yang tenang.',
+                safety: 'Arus datar. Sangat aman bagi petualang penyuka alam rimba.'
+            },
+            citumang: {
+                title: 'Aliran Air Citumang',
+                badge: 'Mata Air Pirus',
+                image: './activity_green_canyon_1780802628294.webp',
+                text: 'Menjauhlah sejenak ke pedalaman hutan tropis yang sejuk. Jalur mendayung air tawar kami di Citumang menawarkan rute jernih di atas air berwarna hijau pirus yang dikelilingi akar pohon besar purba dan tebing batu karst.',
+                safety: 'Bebas dari ombak laut. Sesi air tawar yang aman.'
+            },
+            madasari: {
+                title: 'Laguna Pantai Madasari',
+                badge: 'Pilar Karang Eksotis',
+                image: './activity_rock_formation_1780802654815.webp',
+                text: 'Untuk penjelajah petualangan sejati yang mengagumi kemegahan alam liar. Pantai Madasari menyuguhkan formasi pulau karang kecil yang berdiri kokoh menghadapi ombak laut lepas. Kita mendayung di dalam laguna pelindung.',
+                safety: 'Sangat bergantung pada pasang air. Hanya dijalankan pada cuaca ideal.'
+            }
+        };
+
+        function showDestinationDetail(key) {
+            const dest = destDetails[key];
+            if (!dest) return;
+
+            const modal = document.getElementById('destination-modal');
+            const content = document.getElementById('dest-modal-content');
+
+            content.innerHTML = `
+                <div class="reveal-container h-64 border border-gray-100">
+                    <img loading="lazy" src="${dest.image}" alt="${dest.title}" class="w-full h-full object-cover">
+                </div>
+                <div class="space-y-4">
+                    <span class="text-primaryAccent font-heading text-xs font-bold uppercase tracking-widest bg-primaryAccent/10 px-4 py-1 rounded-full">${dest.badge}</span>
+                    <h3 class="text-2xl font-heading font-bold text-brandDark uppercase tracking-wider">${dest.title}</h3>
+                    <p class="text-sm text-textMain leading-relaxed font-light">${dest.text}</p>
+                    <div class="bg-neutralLight p-4 rounded-xl border border-gray-150">
+                        <span class="text-brandDark font-heading font-bold text-xs uppercase tracking-widest block mb-1">Standar Keamanan:</span>
+                        <p class="text-xs text-textMain">${dest.safety}</p>
+                    </div>
+                </div>
+            `;
+
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            lucide.createIcons();
+        }
+
+        function closeDestinationModal() {
+            document.getElementById('destination-modal').classList.add('hidden');
+        }
+
+        // Instagram Modal Loader
+        function openInstagramModal(text) {
+            const modal = document.getElementById('instagram-modal');
+            document.getElementById('ig-modal-text').innerText = text;
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeInstagramModal() {
+            document.getElementById('instagram-modal').classList.add('hidden');
+        }
+
+        // Lightbox Controller
+        function openLightbox(src, caption) {
+            const modal = document.getElementById('lightbox-modal');
+            const image = document.getElementById('lightbox-image');
+            const cap = document.getElementById('lightbox-caption');
+
+            image.src = src;
+            cap.innerText = caption;
+
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox-modal').classList.add('hidden');
+        }
+
+        // Kalkulator Harga Form
+        const pricingDatabase = {
+            'Beginner Experience': 250000,
+            'Sunrise Experience': 350000,
+            'Adventure Combo': 500000,
+            'Kustom Eksplorasi': 150000
+        };
+
+        function adjustGuests(amount) {
+            const guestsInput = document.getElementById('booking-guests');
+            let val = parseInt(guestsInput.value);
+            val += amount;
+            if (val >= 1 && val <= 25) {
+                guestsInput.value = val;
+                recalculatePrice();
+            }
+        }
+
+        function recalculatePrice() {
+            const pkg = document.getElementById('booking-package').value;
+            const guests = parseInt(document.getElementById('booking-guests').value);
+            const pricePerPax = pricingDatabase[pkg] || 350000;
+            const total = pricePerPax * guests;
+
+            document.getElementById('booking-breakdown').innerText = `${pkg} (${guests} Orang)`;
+            document.getElementById('booking-total').innerText = `IDR ${total.toLocaleString('id-ID')}`;
+        }
+
+        // Prapilih paket dari tombol kartu di atas
+        function preselectActivity(activityName) {
+            const selectEl = document.getElementById('booking-package');
+            
+            if (activityName === 'Stand Up Paddle') {
+                selectEl.value = 'Beginner Experience';
+            } else if (activityName === 'Sunrise Paddle') {
+                selectEl.value = 'Sunrise Experience';
+            } else if (activityName === 'Family Paddle' || activityName === 'Snorkeling' || activityName === 'Camping Adventure') {
+                selectEl.value = 'Adventure Combo';
+            } else if (activityName === 'Feeding Fish') {
+                selectEl.value = 'Kustom Eksplorasi';
+            }
+            recalculatePrice();
+        }
+
+        function bookExperience(pkgName, price) {
+            document.getElementById('booking-package').value = pkgName;
+            recalculatePrice();
+            document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Pengiriman Formulir Otomatis ke WhatsApp API Resmi
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('booking-name').value;
+            const pkg = document.getElementById('booking-package').value;
+            const guests = document.getElementById('booking-guests').value;
+            const date = document.getElementById('booking-date').value;
+            const total = document.getElementById('booking-total').innerText;
+
+            const waNumber = "6282121334445"; // Nomor bantuan resmi brand lokal
+            const textMessage = `Halo Pangandaran Paddle Board! %0A%0ASaya ingin memesan paket petualangan laut premium:%0A%0A*Nama Pemesan:* ${encodeURIComponent(name)}%0A*Pilihan Paket:* ${encodeURIComponent(pkg)}%0A*Rencana Tanggal:* ${encodeURIComponent(date)}%0A*Jumlah Tamu:* ${guests} Orang%0A*Estimasi Biaya:* ${encodeURIComponent(total)}%0A%0AMohon bantuannya untuk memeriksa ketersediaan papan pada tanggal rencana meluncur kami tersebut. Terima kasih banyak!`;
+
+            // Buka API WhatsApp di tab baru
+            window.open(`https://api.whatsapp.com/send?phone=${waNumber}&text=${textMessage}`, '_blank');
+
+            // Jalankan Modal Sukses Kustom
+            const success = document.getElementById('success-modal');
+            document.getElementById('success-title').innerText = "Mengalihkan ke WhatsApp...";
+            document.getElementById('success-message').innerHTML = `Halo Kak <strong>${name}</strong>! Kami sedang merapikan detail data pesanan Anda dan akan langsung membuka gerbang konsultasi WhatsApp untuk memastikan slot jadwal aman Anda terkunci.`;
+            
+            success.classList.remove('hidden');
+            success.classList.add('flex');
+
+            // Reset data formulir
+            document.getElementById('whatsapp-booking-form').reset();
+            document.getElementById('booking-guests').value = "2";
+            recalculatePrice();
+        }
+
+        function closeSuccessModal() {
+            document.getElementById('success-modal').classList.add('hidden');
+        }
+
+        // Pengiriman Langganan Buletin (Newsletter)
+        function handleNewsletterSubmit(event) {
+            event.preventDefault();
+            const email = document.getElementById('newsletter-email').value;
+
+            const success = document.getElementById('success-modal');
+            document.getElementById('success-title').innerText = "Berhasil Ikut!";
+            document.getElementById('success-message').innerHTML = `Hebat. Email Anda (<strong>${email}</strong>) kini telah terdaftar. Kami akan rutin mengirimkan ramalan tinggi air pasang laut berkala dan jadwal eksplorasi ngarai gua tersembunyi langsung ke email Anda.`;
+            
+            success.classList.remove('hidden');
+            success.classList.add('flex');
+
+            document.getElementById('newsletter-email').value = "";
+        }
+
+        // Penghitung Angka Statistik Dinamis Saat Discroll
+        let statsLogged = false;
+        function animateCounter(id, target, suffix = '', speed = 25) {
+            const element = document.getElementById(id);
+            let current = 0;
+            const step = Math.ceil(target / 100);
+            
+            const timer = setInterval(() => {
+                current += step;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                element.innerText = current.toLocaleString('id-ID') + suffix;
+            }, speed);
+        }
+
+        window.addEventListener('scroll', () => {
+            const panel = document.getElementById('statistics-panel');
+            if (!panel) return;
+
+            const rect = panel.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom >= 0 && !statsLogged) {
+                statsLogged = true;
+                animateCounter('stat-visitors', 5000, '+');
+                // Rating ditampilkan statis agar tidak membingungkan
+                document.getElementById('stat-rating').innerText = '4.9★';
+                animateCounter('stat-years', 5, ' Tahun+');
+                animateCounter('stat-guide', 100, '% Lokal');
+            }
+        });
+
+        // Inisialisasi awal saat halaman termuat
+        window.onload = function() {
+            recalculatePrice();
+            
+            // Batasi kalender agar tidak bisa memesan tanggal yang telah lewat
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById('booking-date').setAttribute('min', today);
+        };
+    </script>
+
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // AOS hanya diinisialisasi sekali di sini
+        AOS.init({
+            duration: 700,
+            once: true,
+            offset: 80,
+            easing: 'ease-out-cubic'
+        });
+        // Re-init lucide agar ikon floating WA juga tampil
+        lucide.createIcons();
+    </script>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/6282121334445?text=Halo%20min,%20spill%20dong%20paket%20paddle%20board-nya!" target="_blank" class="fixed bottom-6 right-6 bg-[#25D366] text-white p-4 rounded-full shadow-[0_4px_15px_rgba(37,211,102,0.4)] hover:scale-110 hover:shadow-[0_6px_20px_rgba(37,211,102,0.6)] transition-all duration-300 z-50 flex items-center justify-center animate-pulse group">
+       <i data-lucide="message-circle" class="w-7 h-7"></i>
+       <span class="absolute right-full mr-4 bg-white text-[#25D366] px-3 py-1.5 rounded-xl text-sm font-bold shadow-md opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+           Chat Admin!
+       </span>
+    </a>
+</body></html>
